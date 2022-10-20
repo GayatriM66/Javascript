@@ -6,12 +6,14 @@ function renderHtml(obj){
     document.write(`<h1>${obj.last_name}</h1>`)
 }
 
+
 function getUser(pageNo){
     return fetch(`https://reqres.in/api/users?page=${pageNo}`)
     .then(function(res){
         return res.json()
     })
 }
+
 
 function getID(id){
     return fetch(`https://reqres.in/api/users/${id}`)
