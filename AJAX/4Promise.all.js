@@ -1,5 +1,4 @@
-//program 1
-
+// // //program 1
 // function userInfo(id){
 //     return fetch(`https://reqres.in/api/users/${id}`)
 //     .then(function(res){
@@ -7,18 +6,22 @@
 //     })
 // }
 
+
 // userInfo(1)
 // .then(function(res){
 //     console.log(res)
+//     renderHtml(res.data)
 // })
 
 
+// function renderHtml(res){
+//     document.write(`<h1>${res.first_name}</h1>`)
+// }
 
 
 
 
-
-//////2
+// ////2
 // function userInfo(id){
 //     return fetch(`https://reqres.in/api/users/${id}`)
 //     .then(function(res){
@@ -35,7 +38,7 @@
 //     document.write(`<img src=${obj.avatar}>`)
 // }
 
-// userInfo(1)
+// userInfo(3)
 // .then(function(res){
 //     console.log(res)
 //     renderHtml(res.data)
@@ -60,8 +63,6 @@
 //         return res.json()
 //     })
 // }
-
-
 
 // function renderHtml(obj){
 //     document.write(`<h1>${obj.first_name}</h1>`)
@@ -103,25 +104,37 @@
 
 
 
-/////////////5
 
-async function Info(){
-    let a=await Promise.race([
+
+
+
+
+// // /////////////5
+
+// async function Info(){
+//     let a=await Promise.race([
         
-        // Promise.resolve('hello solved'),
-        // Promise.reject('hello rejected')
+//         // Promise.resolve('hello solved'),
+//         // Promise.reject('hello rejected')
 
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve('hello resolved')
-            },3000)
-        }),
+//         new Promise(function(resolve){
+//             setTimeout(function(){
+//                 resolve('hello resolved')
+//             },3000)
+//         }),
 
-        new Promise(function(reject){
-            reject('hello rejected')
-        },2000)
+//         new Promise(function(reject){
+//             setTimeout(function(){
+//                 reject('hello rejected')
+//             })
+//         },2000)
         
-    ])
-    console.log(a)
-}
-Info()
+//     ])
+//     console.log(a)
+// }
+// Info()
+
+// // Promise.allSettled()
+
+
+// // Promise.any()

@@ -1,12 +1,3 @@
-// type 
-// boolean ----> true or false
-// number  ----> 2,0,-4
-// string  ----> collection of character
-// type ---- properties and methods
-//  values
-// type (user defined data type) --- property and method 
-// objects
-//template -----> objects
 //object literal 
 //function constructor
 //es6 class 
@@ -23,7 +14,7 @@
 // method() -----> property 
 // action and return type
 
-// ////1st way
+// ////1st way   Object Literal
 // let sweety={
 //     firstName:"gayatri",
 //     lastName:"Mahale",
@@ -46,9 +37,7 @@
 
 
 
-// //template----------->function constructor
-// //program one
-// //2nd way
+// //2nd way function constructor
 // function Person(fn,ln,age,skills){
 //     this.firstName=fn
 //     this.lastName=ln
@@ -66,9 +55,6 @@
 
 
 // // program  2
-// // vehicle  , color, type , modelNo 
-// // start() , stop()
-// //bwm , audi
 // function vehicle(color,type,modelNo){
 //     this.color = color;
 //     this.type = type ;
@@ -82,6 +68,9 @@
 // }
 // let audi = new vehicle('red',"sedane",123)
 // let bmw = new vehicle('black',"SUV",456)
+
+// bmw.start()
+// bmw.stop()
 
 
 
@@ -114,65 +103,70 @@
 //         this.age=age
 //         this.skills=skills
 //         this.display=function(){
-//             console.log(this.firstName)
+//             console.log("my name is ",this.firstName)
 //         }
 //     }
 // }
 // let sweety1 = new PersonC("sweety",32,["html","css"])
 // console.log(sweety1)
+// sweety1.display()
 
 
 
 
-
-
-class vehicle {
-    constructor(color, type, modelNo) {
-        this.color = color
-        this.modelNo = modelNo
-        this.type = type
-        this.start = function () {
-            console.log("I am strating")
-        }
-        this.stop = function () {
-            console.log("I am stopping")
-        }
-    }
-}
+// class vehicle {
+//     constructor(color, type, modelNo) {
+//         this.color = color
+//         this.modelNo = modelNo
+//         this.type = type
+//         this.start = function () {
+//             console.log("I am strating")
+//         }
+//         this.stop = function () {
+//             console.log("I am stopping")
+//         }
+//     }
+// }
 
 // let Audi=new vehicle("black","sedane",123)
 // console.log(Audi)
+// Audi.start()
+// Audi.stop()
 
 
-//create multiple objects by array
-//problem is all onjects having a same objectname vehicleThree
-let vehiclesThree = [new vehicle("red", "swift", 111),
-new vehicle("black", "desire", 222),
-new vehicle("red", "swift", 333),
-new vehicle("red", "swift", 444)]
 
-//console.log(vehiclesThree)
 
-vehiclesThree.forEach(function (el) {
-    for (let key in el) {
-        console.log(key, el[key])
-    }
-})
 
-//sloution
-//create an object with different objectNames through object
-let vehicleFour = {
-    car1: new vehicle("silver", "Baleno", 555),
-    car2: new vehicle("silver", "Baleno", 666),
-    car3: new vehicle("silver", "Baleno", 777),
-    car4: new vehicle("silver", "Baleno", 888)
- }
+// //create multiple objects by array
+// //problem is all objects having a same objectname i.e. vehicleThree
+// let vehiclesThree = [new vehicle("red", "swift", 111),
+// new vehicle("black", "desire", 222),
+// new vehicle("red", "swift", 333),
+// new vehicle("red", "swift", 444)]
+// console.log(vehiclesThree)
 
-for(let values of Object.values(vehicleFour)){
-    for(let key in values){
-        console.log(key,values[key])
-    }
-}
+
+
+// vehiclesThree.forEach(function (el) {
+//     for (let key in el) {
+//         console.log(key, el[key])
+//     }
+// })
+
+// //sloution
+// //create an object with different objectNames through object
+// let vehicleFour = {
+//     car1: new vehicle("silver", "Baleno", 555),
+//     car2: new vehicle("silver", "Baleno", 666),
+//     car3: new vehicle("silver", "Baleno", 777),
+//     car4: new vehicle("silver", "Baleno", 888)
+//  }
+
+// for(let values of Object.values(vehicleFour)){
+//     for(let key in values){
+//         console.log(key,values[key])
+//     }
+// }
 
 
 
@@ -183,22 +177,4 @@ for(let values of Object.values(vehicleFour)){
 // sweety   mahale       34   html , css
 // ----------------------------------
 // console.log(sweety)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

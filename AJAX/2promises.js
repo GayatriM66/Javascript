@@ -32,11 +32,12 @@
 
 
 
+
 //// Multiple async
 
 // user creation 
 // getId
-// userInfo
+// // userInfo
 
 // function GetInfo(){
 //     setTimeout(function(){
@@ -59,7 +60,7 @@
 
 
 
-//call back hell
+// //call back hell
 // function GetInfo() {
 //     setTimeout(function () {
 //         console.log("User create")
@@ -80,25 +81,24 @@
 
 
 
-////promises
+// // ////promises
 
-// let prom1 = new Promise(function (resolve, reject) {
+// let prom1 = new Promise(function (reject,resolve) {
 //     let a = 20
 //     let b = 24
 //     if (a == b) {
 //         resolve("This is resolve block")
 //     }
 //     else {
-//         reject("this is reject block")
+//        reject("this is reject block")
 //     }
 // })
 
 
-//consume promise
 
 // prom1.then((str)=>{
 //     console.log(str)
-// },(str)=>{
+// }).catch((str)=>{
 //     console.log(str)
 //  })
 
@@ -115,7 +115,7 @@
 //     }).then(function (ele) {
 //         console.log(ele)
 //     }).catch(function(str){
-//         console.log(str)
+//         console.log(str,"catch")
 //     })
 //     .finally(function(){
 //         console.log("I am Finally Block!!! I will execute definately")
@@ -134,10 +134,10 @@
 //                 console.log("Get info")
 //             }, 1000)
 //         }, 2000)
-
 //     }, 3000)
 // }
 // GetInfo()
+
 
 
 
@@ -166,7 +166,6 @@ function GetInfo(){
 }
 
 
-
 // CreateUser()
 // .then(function(str){
 // console.log(str)
@@ -182,11 +181,7 @@ function GetInfo(){
 
 
 
-
-
-
-//async await
-
+// //async await
 async function getInformation123(){
     let a= await CreateUser()
     console.log(a)
@@ -194,11 +189,12 @@ async function getInformation123(){
     console.log(b)
     let c = await GetInfo()
     console.log(c)
-  //  return c
+    return c
 }
 
-getInformation123()
-//let s = getInformation123()
-// s.then(function(str){
-//     console.log(str)
-// })
+//getInformation123()
+let s = getInformation123()
+s.then(function(str){
+    console.log(str)
+})
+

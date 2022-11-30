@@ -1,12 +1,12 @@
 // Promises --- asyn code manage
-// async --- sync 
-// async --- parallel execution
+// async(parallel execution) --- sync 
+
+// Promise ----
+// pending  resolve reject
 
 
-// Promise ---- 10 info
-// pending 
-// resolve
-// reject
+
+
 
 
 // function addA(){
@@ -24,23 +24,63 @@
 
 
 
+//setTimeout()
+//The setTimeout() method calls a function after a number of milliseconds.
+// The setTimeout() is executed only once.
+// If you need repeated executions, use setInterval() instead.
+// Use the clearTimeout() method to prevent the function from starting.
+// To clear a timeout, use the id returned from setTimeout():
+
+// myTimeout = setTimeout(function, milliseconds);
+// Then you can to stop the execution by calling clearTimeout():
+// clearTimeout(myTimeout);
+
+
+//eg
+// let timeOut=setTimeout(function(){
+// },2000)
+//  console.log(timeOut)
+
+
+
+//  //eg
+//  let timeOut=setTimeout(alert,1000)
+//  function alert(){
+//     console.log('Message-Alert')
+//  }
+
+
+
+
+//clearTimeout eg
+//   clearTimeout(timeOut)
+// The clearTimeout() method clears a timer set with the setTimeout() method.
+// To clear a timeout, use the id returned from setTimeout():
+
+// myTimeout = setTimeout(function, milliseconds);
+// Then you can to stop the execution by calling clearTimeout():
+
+// clearTimeout(myTimeout);
+
+
+
+
+
 
 // //SetTimeout is async in nature----so non blocking nature 
 // //program 2 
-// //Async
+
 // function addC() {
 //     setTimeout(function () {
 //         console.log('C')
 //     }, 2000)
 // }
-
 // function addD() {
 //     console.log('D')
 // }
-
 // addC()
 // addD()
-//func addC even if called first, it will be executed after 2 seconds because of setTimeout
+// //func addC even if called first, it will be executed after 2 seconds because of setTimeout
 
 
 
@@ -48,7 +88,7 @@
 
 
 //program 3 
-//weneed a output in sequence
+//we need a output in sequence
 //1. userCreate(API)---getId(API)----userInfo(API)
 
 // //async------>sync
@@ -71,7 +111,7 @@
 
 
 
-//async -----sync 
+// //async -----sync 
 
 // //call back hell
 // function getUserInfo() {
@@ -85,26 +125,26 @@
 //         }, 2000)
 //     }, 3000)
 // }
-
 // getUserInfo()
 
-// //Now we are achieveing the result what we want,
+//Now we are achieveing the result what we want,
 // but its creating a call back hell.
-//triangle shape
+// triangle shape
 
 
 
 
 
 // //promises
-// let pro = new Promise(function (resolve, reject) {
+//promise is a constructor
+// let pro = new Promise(function (resolve1,reject123) {
 //     let a = 10
 //     let b = 1
 //     if (a == b) {
-//         resolve("Both are equal   !")
+//         resolve1("Both are equal   !")
 //     }
 //     else {
-//         reject("Both are not equal   !")
+//         reject123("Both are not equal   !")
 //     }
 // })
 
@@ -131,7 +171,7 @@
 //  pro2.then(function(a){
 //     console.log(a[1])
 //  },function(b){
-//     console.log(b[1])
+//     console.log(b[2])
 //  })
 // //  .finally(function(){
 // //     console.log("Promise resolve or Reject I will definately run")
@@ -141,23 +181,22 @@
 
 
 
+//with catch block
 
-// //with catch block
-
-// let pro2=new Promise(function(resolve,reject){
-//     let no1=10;
-//     let no2=10;
-//     if(no1==no2){
-//         resolve([5,6,7])
-//     }
-//     else{
-//         reject([8,9,10])
-//     }    
-// })
-// pro2.then(function(a){
-//     console.log(a[1])
-// }).catch(function(b){
-//     console.log(b[1])
-// }).finally(function(){
-//     console.log("Promise resolve or Reject I will definately run")
-// })
+let pro2=new Promise(function(resolve,reject){
+    let no1=10;
+    let no2=30;
+    if(no1==no2){
+        resolve([5,6,7])
+    }
+    else{
+        reject([8,9,10])
+    }
+})
+pro2.then(function(a){      //resolve
+    console.log(a[1])
+}).catch(function(b){       //reject we aree chaining a catch method here, looks more clean
+    console.log(b[1])
+}).finally(function(){
+    console.log("I will definately run")
+})

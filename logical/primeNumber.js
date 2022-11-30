@@ -1,3 +1,6 @@
+// //The return statement stops the execution of a function and
+// // returns a value.
+
 // let count,i;
 // function primeNo(num) {
 //     if(num<2){
@@ -10,12 +13,18 @@
 //     }
 //     return "is a prime"
 // }
-// console.log(primeNo(13))
+// console.log(primeNo(12))
+
+
+
+
+
+
 
 // //learn break
 // for(let i=1;i<=5;i++){
 //     console.log("this is for i ",i)
-//     for(let j=i;j<=5;j++){
+//     for(let j=10;j<=15;j++){
 //         console.log("executing break", j)
 //         break //breaks the current loop only
 //     }

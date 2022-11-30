@@ -240,6 +240,14 @@
 
 
 
+////print all array elements:
+
+// let num=[1,2,3,4,6,7,78,56]
+
+// num.forEach((n,i,nums)=> console.log(n)); 
+
+
+
 
 
 
@@ -283,46 +291,6 @@
 // let sum1=[34,312,1,0,532,31,33,32,34,334]
 // let s6=sum1.sort()
 // console.log(s6, "result of sort")
-
-// //splice(index, deleteCount, rel,rel)     
-// 
-// //            0        1       2       3         4            
-// let fruits1=['apple','banana','mango','papaya','cherry']
-// //             -5      -4      -3      -2       -1
-
-// let f1=fruits1.splice(1,4)
-// console.log(f1, "splice")
-// console.log(fruits1, "After splice")
-
-
-
-//  fruits1=['apple','banana','mango','papaya','cherry']
-// let f2=fruits1.splice(2)
-// console.log(f2, "splice")
-// console.log(fruits1, "After splice")
-
-
-
-// fruits1=['apple','banana','mango','papaya','cherry']
-// let f6=fruits1.splice(-3)
-// console.log(f6, "splice -3")
-// console.log(fruits1, "After splice")
-
-
-
-// fruits1=['apple','banana','mango','papaya','cherry']
-// let f3=fruits1.splice(1,2,"custardAplle","custardAplle","custardAplle")
-// console.log(f3, "splice")
-// console.log(fruits1, "After splice")
-
-
-// fruits1=['apple','banana','mango','papaya','cherry']
-// let f4=fruits1.splice(1,2,"custardAplle")
-// console.log(f4, "splice")
-// console.log(fruits1, "After splice") 
-
-
-
 
 
 // //concat() 2 arrays to one

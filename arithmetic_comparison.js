@@ -27,7 +27,7 @@ truthy and falsy */
 
 
 
-// console.log(8 >= 8)     //true 
+// console.log(8 >= 8)     //true
 // console.log(8 == 8)     //true
 // console.log(8 != 8)     //false
 // console.log(8 === 8)    //true
@@ -58,7 +58,7 @@ truthy and falsy */
 
 
 
-//logical operator 
+//logical operator
 // AND - &&
 // True True --->  True
 // True False ---> False
@@ -136,7 +136,7 @@ truthy and falsy */
 // console.log(9 > 4)   //true
 // console.log(9 < 12)  //true
 // console.log(9 >= 4) //true
-// console.log(9 <= 9)   //true  
+// console.log(9 <= 9)   //true
 // console.log(9 == 4)  //false
 // console.log(9 !== 4) //true
 // console.log(9 == '9')  //true
@@ -148,6 +148,7 @@ truthy and falsy */
 // console.log(6 == '6')  //true
 // console.log(6 === '6') //false
 // console.log(6 != 7)//true
+// console.log(null==undefined)
 
 
 

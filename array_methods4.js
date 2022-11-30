@@ -10,24 +10,24 @@
 
 
 
-// //get current ages of all members
-// let birthyear=[2000,1990,1995,2001,1987,1980]
-// let ages =[]
+//get current ages of all members
+let birthyear=[2000,1990,1995,2001,1987,1980]
+let ages =[]
 
-// for(let i=0; i<birthyear.length-1;i++){
+for(let i=0; i<birthyear.length-1;i++){
 
-//     ages.push(2022-birthyear[i])
-// }
-// console.log("current ages ",ages)
+    ages.push(2022-birthyear[i])
+}
+console.log("current ages ",ages)
 
 
-// //map
-// //print every ages +2 in new array
-// let ages2 =[]
-// ages.map(function(el,index,arr){
-//     ages2.push(el+2)
-// })
-// console.log("ages2 is = ",ages2)
+//map
+//print every ages +2 in new array
+let ages2 =[]
+ages.map(function(el,index,arr){
+    ages2.push(el+2)
+})
+console.log("ages2 is = ",ages2)
 
 
 
@@ -89,16 +89,16 @@
 
 
 
-// /////every() foreach() some() find() findindex()
-// let num3=[1,2,3,4,5,6,7,8,9,10,11,22,33,44,55,66,77,88,99]
-// console.log(num3,"\n")
+/////every() foreach() some() find() findindex()
+let num3=[1,2,3,4,5,6,7,8,9,10,11,22,33,44,55,66,77,88,99]
+console.log(num3,"\n")
 
-// let a= num3.every(function(el){
-//     return el>5
-// })
+let a= num3.every(function(el){
+    return el>5
+})
 
-// let b=num3.some(function(el){
-//     return b=el/2
-// })
+let b=num3.some(function(el){
+    return b=el/2
+})
 
-// console.log(a)
+console.log(a)

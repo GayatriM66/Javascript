@@ -71,17 +71,30 @@
 
 
 
-//works
-var array = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8];
-var newArr=[]
-array.forEach((el)=>{
-//    if(!newArr.includes(el)){     //works  or
-//     newArr.push(el)
-//    }
-    if(newArr.indexOf(el)===-1){    //works
-        newArr.push(el)
-    }
-})
-console.log(newArr)
+// //works
+// var array = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8];
+// var newArr=[]
+// array.forEach((el)=>{
+// //    if(!newArr.includes(el)){     //works  or
+// //     newArr.push(el)
+// //    }
+//     if(newArr.indexOf(el)===-1){    //works
+//         newArr.push(el)
+//     }
+// })
+// console.log(newArr)
 
 
+
+
+
+// var array = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8];
+
+// let newArr=[];
+// array.filter(function(el){     //filter,map,
+//       if(!newArr.includes(el)){ 
+//         newArr.push(el)
+//             }
+// })
+
+// console.log(newArr)

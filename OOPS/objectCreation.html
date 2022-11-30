@@ -1,0 +1,74 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script> //types of creating object in javascript
+
+
+
+        //1st type of object creation is : object literal
+        document.write("<h4>1. object literal demo</h4>")
+       
+        let student = {
+            name: "gayatri",
+            age: 32,
+            city: "Dhule"
+        }
+        document.write(
+            "<br> student name is : " ,
+            student.name,
+            "<br> student age is : ",
+            student.age,
+            "<br> student city is : ",
+            student.city
+        )
+            //2nd type for object creation with new keyword
+        document.write("<h4><br><br>2. new keyword demo</h4>")
+
+        let stud=new Object();
+
+        stud.name="gayu"
+        stud.age=13
+        stud.city="chandrapur"
+
+
+            document.write(
+                "<br>stud name is : ",
+                stud.name,
+                "<br>stud age is : ",
+                stud.age,
+                "<br>stud.city is : ",
+                stud.city
+            )
+
+
+            //3rd way of creating an object using function constructor
+
+
+    document.write("<h4><br><br>3. creation of object through function constructor</h4>")
+
+            function person1(id, name , branch){
+                this.id=id,
+                this.name=name,
+                this.branch=branch
+            }
+
+            let p1=new person1(2,"nameAbc", "branchAbc")
+
+            document.write(
+                "<br> P1 id is : ",
+                p1.id,
+                "<br> P1 name is : ",
+                p1.name,
+                "<br> P1 branch is : ",
+                p1.branch   )
+
+
+
+</script>
+</body>
+
+</html>

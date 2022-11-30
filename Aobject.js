@@ -1,23 +1,22 @@
 // let abc={}//this is a blank object
-// console.log("abc typeof",typeof abc)
+// console.log("typeof is ",typeof abc)
+
+
 
 
 let person = ["gayatri", "mahale", 12, 30]
-//in this array we can not say what is 12 and 30 is what for what??.
-//what is age and what is roll no??
+// in this array we can not say what is 12 and 30??.
+// what is age and what is roll no??
 
 
-
-
-
-// //solution is object
-// let person1 = {
-//     //property/key: value,
-//     firstName: "gayatri",
-//     lastName: "mahale",
-//     rollNo: 1234,
-//     age: 30
-// }
+//solution is object
+let person1 = {
+    //property/key: value,
+    firstName: "gayatri",
+    lastName: "mahale",
+    rollNo: 1234,
+    age: 30
+}
 
 
 
@@ -28,7 +27,8 @@ let person = ["gayatri", "mahale", 12, 30]
 // console.log(person1.firstName)  //both same
 // console.log(person1['firstName'])
 
-// //update/create    //if the property not available it will create, if available it will update.
+// //update/create  
+//if the property not available it will create, if available it will update.
 // person1.state="maharashtra"  //create
 // person1['rollNo']=2222         //update
 
@@ -59,31 +59,31 @@ let person = ["gayatri", "mahale", 12, 30]
 // delete vehicle.VehicleType//delete
 // console.log(vehicle)
 
-//object does not store the value by index
-//.notation and bracket notation to access the values
-//objectName.propertyName
-//.notation does not work inside the loop
+// // object does not store the value by index
+// // .notation and bracket notation to access the values
+// // objectName.propertyName
+// // .notation does not work inside the loop
 
 
 
 
 
 
-// //bank example
-// let bank={
-//     bankName: "canara bank",
-//     accNo:1234,
-//     custName:"gayatri",
-//     accType: ["saving","current"]
-// }
-// console.log(bank['bankName'],"is a bank name")
+//bank example
+let bank={
+    bankName: "canara bank",
+    accNo:1234,
+    custName:"gayatri",
+    accType: ["saving","current"]
+}
+console.log(bank['bankName'],"is a bank name")
 
-// //loop
-// //dot notation does not work inside the loop)
-// for(let cc in bank){
-//     console.log(cc,bank[cc])  
-// //(bank.cc will not work here in loop)  //cc works as key
-// }
+//loop
+//dot notation does not work inside the loop)
+for(let cc in bank){
+    console.log(cc,bank[cc])  
+//(bank.cc will not work here in loop)  //cc works as key
+}
 
 
 
