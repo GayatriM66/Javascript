@@ -16,6 +16,7 @@
 
 
 
+
 // // //typeof()
 //let fruits = ["apple","banana","kiwi","pineapple"]
 // console.log("typeof(fruits)is ",typeof(fruits))  // object type

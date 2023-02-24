@@ -96,9 +96,11 @@
 //     setTimeout(() => {
 //         console.log('user Created')
 //     }, 3000);
+
 //     setTimeout(() => {
 //         console.log('get ID')
 //     }, 2000)
+
 //     setTimeout(() => {
 //         console.log('user info')
 //     }, 1000)
