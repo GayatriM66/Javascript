@@ -8,9 +8,9 @@
 //normal function -> for lengthy code , OOP : ok
 
 
-
-//program for odd number
 //function expression
+//program for odd number
+
 let x = 34
 
 let test = function test_odd_num(x) {
@@ -26,19 +26,12 @@ let test = function test_odd_num(x) {
 test(20)
 
 
-
-
-
 //arrow function 
 let greet = () => console.log("Good Morning...!!!")
 greet()
 
 
-
-
-
-
-//ex1
+//arrow function ex1
 let testNum = (num) => {
     console.log("the given number is ", num)
     console.log("Good Job...!!1")
@@ -49,7 +42,7 @@ testNum(22)
 
 
 
-//ex2
+//arrow function ex2
 let testNum2 = (num) => {
     if (num % 2 == 0) {
         console.log(num, " is an even number")
@@ -64,7 +57,7 @@ testNum2(13)
 
 
 
-////ex3
+////arrow function ex3
 //Print the table of 8 using arrow function 
 let number = (num) => {
     for(let i=1;i<11;i++){
@@ -72,18 +65,3 @@ let number = (num) => {
     }
 }
 //number(8)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

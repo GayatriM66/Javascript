@@ -28,7 +28,7 @@ typeof a;				// "object"
 //In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context.
 // All values are truthy unless they are defined as falsy. That is, 
 //all values are truthy except:
-//false, 0, -0, 0n, "", null, undefined, and NaN.
+//false, 0, -0, 0n, "", null, undefined, and NaN.           //falsy
 
 
 
@@ -42,6 +42,6 @@ console.log(Boolean(null))//false
 console.log(Boolean(NaN))//false
 console.log(Boolean(undefined))//false
 console.log(Boolean("")) //false
-console.log(Boolean(" ")) //true
+console.log(Boolean(" ")) //true            //space is true
 console.log(Boolean('')) //false
-console.log(Boolean(' ')) //true
+console.log(Boolean(' ')) //true            //space is true
